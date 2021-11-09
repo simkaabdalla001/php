@@ -23,15 +23,15 @@ if (isset($_GET["user_id"])){
     <div class="col-3"></div>
     <div class="col-6">
     <h3 class="text-info text-centre">updating user</h3>
-        <form method="post"action="">
+        <form method="post"action="update_handler.php">
 
 </div>
-<form method="post" action="">
+<form method="post" action="update_handler.php">
     <input value="<?php echo $receivedId;?>" type="hidden" name="id">
     <input value="<?php echo $receivedName;?>" name="x" class="form-control" type="text" placeholder="update name"><br><br>
     <input value="<?php echo $receivedEmail;?>" name="y" class="form-control" type="email" placeholder="update email"><br><br>
     <input value="<?php echo $receivedPassword;?>" name="z" class="form-control" type="password" placeholder="update password"><br><br>
-    <input name="btn_reg" class="btn btn-outline-info btn-block" type="submit" value="update"
+    <input name="btn_update" class="btn btn-outline-info btn-block" type="submit" value="update">
            <a class="btn btn-outline-success btn-block" href="users.php">Back</a>
 
 

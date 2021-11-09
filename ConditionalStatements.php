@@ -29,7 +29,7 @@ echo "<br>";
 
 //IF STATEMENTS
 $x = 10;
-if ($x,10){
+if ($x<10){
     echo "X is less than 10";
 }else{
     echo "X noy less than 10";

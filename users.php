@@ -23,7 +23,7 @@
           ///Start by connecting to the database
     require_once "connection.php";
        ////Prepare the select query
-    $selectQuery ="SELECT * FROM `users` WHERE 1 ";
+    $selectQuery ="SELECT * FROM users WHERE 1 ";
     $users= mysqli_query($connection,$selectQuery);
     foreach ($users as $person){
         $userName =$person["jina"];
@@ -35,9 +35,9 @@
               <td>$userName</td>   
               <td>$userEmail</td>
               <td><a class='btn btn-danger' href='delete_handler.php?user_id=$userid'>Delete<a></td>
-              <td><a class='bn btn-info' href='update.php?user_name=$userName&user_email=$userEmail&user_password$userPassword&user_id'>Update</a></td>
+              <td><a class='bn btn-info' href='update.php?user_name=$userName&user_email=$userEmail&user_password=$userPassword&user_id=$userid'>Update</a></td>
               
-.            </tr>
+.            </tr>";
                                  
         
     }
